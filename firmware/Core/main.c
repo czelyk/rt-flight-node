@@ -1,5 +1,8 @@
 #include <stdint.h>
 
+int initialized_value = 42;
+int zero_initialized_value;
+
 int main(void) {
     volatile uint32_t counter = 0U;
 
@@ -8,4 +11,5 @@ int main(void) {
     }
     
     return 0;
+    
 }
